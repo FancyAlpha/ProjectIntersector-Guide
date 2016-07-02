@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+* {
+    outline: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body {
+	position: absolute;
+    font-family: Righteous sans-serif;
+    background: rgba(0,0,0,0.3);
+    color: white;
+	font-family: 'Righteous', cursive;
+    overflow: hidden;
+}
+
+a {
+    color: white;
+}
+
+td {
+    min-width: 250px;
+    transition: min-width 0.4s, box-shadow 0.25s ease-in-out;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    box-shadow: inset 3px 0px 35px rgba(0,0,0,0.2); 
+    vertical-align:top;
+}
+
+td:hover {
+     position: relative;
+     min-width: 40vw;
+     box-shadow: 40vw 0px 0px rgba(0, 0, 0, 0.3) , -40vw 0px 0px rgba(0, 0, 0, 0.3);
+     z-index: 5;
+}
+
+table {
+    height: 100%;
+    border-collapse: collapse;
+}
+
+::selection {
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+
+.head {
+    transition: all 0.5s ease-out;
+	font-size: 5vh;
+    margin-bottom: 100vh;
+    }
+
+.hide, li {
+	 font-size: 2vh; 
+     transition: all 0.5s ease-out;
+}
+
+td:hover > .hide {
+    
+}
+
+td:hover > .head {
+    margin: 50px 0px;
+}
+
+.bar {
+	position: fixed;
+	background: rgb(240,240,240);
+	top: 95vh;
+	height: 5vh;
+	text-align: center;
+	z-index: 6;
+	box-shadow: 0px -1vh 30px rgba(0,0,0,0.2);
+}
+
+.bar p {
+	position: relative;
+	margin: 1.25vh 0;
+	color: grey;
+}
+
+.vid {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    width: 100%; !important;
+    height: 500px; !important;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
